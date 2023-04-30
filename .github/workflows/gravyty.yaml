@@ -24,4 +24,4 @@ jobs:
         with:
           maven-version: 3.8.2
       - name: Compile class
-        run: mvn exec:java -Dexec.mainClass=com.example.MyClass
+        run: mvn -f aaaa/pom.xml install
