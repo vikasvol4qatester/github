@@ -18,5 +18,6 @@ public class Main {
     WebDriver driver = new ChromeDriver(chromeOptions);
     driver.get("https://www.google.com");
     driver.manage().window().maximize();
+    driver.close();
   }
 }
