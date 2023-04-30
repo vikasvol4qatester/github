@@ -24,4 +24,6 @@ jobs:
         with:
           maven-version: 3.8.2
       - name: Compile class
-        run: exec:java -Dexec.mainClass=com.example.Main
+        uses: nanovms/maven@v1
+        with:
+        args: exec:java -Dexec.mainClass=com.example.Main
