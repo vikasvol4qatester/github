@@ -24,6 +24,4 @@ jobs:
         with:
           maven-version: 3.8.2
       - name: Compile class
-        uses: nanovms/maven@v1
-        with:
-        args: exec:java -Dexec.mainClass=com.example.Main
+        run: mvn --batch-mode --update-snapshots verify
