@@ -1,0 +1,28 @@
+name: Windows-Runner
+on:
+  schedule:
+    - cron: '* * * * *'
+  push:
+    branches:
+      - create-git-action
+jobs:
+  job_one:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 19
+        uses: actions/setup-java@v3
+        with:
+          java-version: '19.0.1'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.8.2
+      - name: Build with Maven
+        run: mvn install -DskipTests
+
+      - name: Run specific test file with Maven
+        run: mvn test
