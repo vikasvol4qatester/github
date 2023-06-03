@@ -22,7 +22,7 @@ jobs:
         with:
           maven-version: 3.8.2
       - name: Build with Maven
-        run: javac Selenium.java\
+        run: javac src/test/java/Selenium.java
 
       - name: test code
         run: java Selenium
