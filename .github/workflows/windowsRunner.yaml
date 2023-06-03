@@ -22,7 +22,4 @@ jobs:
         with:
           maven-version: 3.8.2
       - name: Build with Maven
-        run: mvn install -DskipTests
-
-      - name: Run specific test file with Maven
-        run: mvn test -Dtest=src.test.java.Selenium
+        run: mvn install
