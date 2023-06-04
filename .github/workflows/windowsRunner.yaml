@@ -14,7 +14,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '19.0.1'
-#          distribution: 'temurin'
+          distribution: 'temurin'
+          maven-version: 3.8.2
 #          cache: maven
 #
 #      - name: Set up Maven
