@@ -26,8 +26,8 @@ jobs:
         run: mvn clean install -X --file pom.xml
 
       - name: compile code
-        run: javac Selenium.java
+        run: javac src/test/java/Selenium.java
         continue-on-error: true
 
       - name: test code
-        run: java Selenium
+        run: java src/test/java/Selenium
