@@ -16,13 +16,7 @@ jobs:
           java-version: '19.0.1'
           distribution: 'temurin'
           maven-version: 3.8.2
-
-
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-        ref: main
-#          cache: maven
+#         cache: maven
 #
 #      - name: Set up Maven
 #        uses: stCarolas/setup-maven@v4.5
