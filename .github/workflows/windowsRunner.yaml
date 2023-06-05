@@ -21,7 +21,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-        ref: create-git-action
+        ref: main
 #          cache: maven
 #
 #      - name: Set up Maven
