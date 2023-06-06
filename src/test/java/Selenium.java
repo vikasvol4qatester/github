@@ -2,9 +2,11 @@ import java.io.File;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 public class Selenium {
-  public static void main(String[] args) {
+  @Test
+  public void main() {
     System.out.println("Hello world!");
     System.out.println("Hello world!");
     System.out.println(new File(System.getProperty("user.dir") + "\\drivers\\chromedriver.exe"));

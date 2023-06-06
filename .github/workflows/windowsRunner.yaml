@@ -23,11 +23,7 @@ jobs:
 #        with:
 #          maven-version: 3.8.2
       - name: Build with Maven
-        run: mvn clean install -X
+        run: mvn clean install --file pom.xml
 
       - name: compile code
-        run: javac src/test/java/Selenium.java
-        continue-on-error: true
-
-      - name: test code
-        run: java src/test/java/Selenium
+        run: mvn test -Dtest="Selenium"
