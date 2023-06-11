@@ -11,7 +11,7 @@ public class Selenium {
     System.out.println("Hello world!");
     System.out.println(new File(System.getProperty("user.dir") + "\\drivers\\chromedriver.exe"));
     System.setProperty("webdriver.chrome.driver",
-        new File(System.getProperty("user.dir") + "\\drivers\\chromedriver.exe").toString());
+        new File(System.getProperty("user.dir") + "\\drivrs\\chromedriver.exe").toString());
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--remote-allow-origins=*");
     WebDriver driver = new ChromeDriver(options);
